@@ -1,8 +1,14 @@
 :root {
-  --black-color: "#000000";
-  --gray_color: "#68707D";
-  --light_gray: "#F7F8FD";
-  --orange-color: "#FF7D1A";
-  --white_background: "#FFF";
-  --Light-grayish-blue: '#F7F8FD';
+  --black-color: #000000;
+  --very-dark-blue: #1D2025;
+  --gray_color: #68707D;
+  --light_gray: #F7F8FD;
+  --orange-color: #FF7D1A;
+  --white_background: #FFF;
+  --Light-grayish-blue: #F7F8FD;
+}
+
+.nav-border {
+  /* color: red; */
+  
 }

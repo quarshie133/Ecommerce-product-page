@@ -4,13 +4,10 @@ export const NavWrapper = styled.nav`
   background-color: var(--white_background);
   padding: 20px;
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: center;
   gap: 2rem;
-  /* border-bottom: 1px solid #ccc; */
-  /* width: 1141px; */
-/* height: 1px; */
-/* flex-shrink: 0; */
+  border-bottom: 1px solid #ccc;
 `;
 
 export const Logo = styled.a`
@@ -21,10 +18,6 @@ export const Logo = styled.a`
   text-decoration: none;
   color: var(--black-color);
   margin-left: 10.31rem;
-  
-  &:hover{
-    color: var(--Light-grayish-blue);
-  }
 `;
 
 export const NavList = styled.ul`
@@ -35,8 +28,35 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.a`
   font-family: "Kumbh Sans", sans-serif;
-  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+
   color: var(--gray_color);
+
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    /* Set the link color on hover */
+    color: var(--very-dark-blue);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -3.8rem;
+    left: 0;
+    padding: 2px;
+    margin-bottom: 1.5rem;
+    background-color: var(--orange-color);
+    transform: scaleX(0); /* Start with no underline width */
+    transform-origin: 10% 40%;
+  }
+
+  &:hover:before {
+    transform: scaleX(1); /* Expand the underline on hover */
+  }
 `;
 
 export const CartWrapper = styled.div`

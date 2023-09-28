@@ -1,24 +1,41 @@
 import React from "react";
-import { NavWrapper, Logo, NavList, NavItem, CartWrapper } from "./Nav.styled";
+import {
+  NavWrapper,
+  Logo,
+  NavList,
+  NavItem,
+  CartWrapper,
+  NavLink,
+} from "./Nav.styled";
 import Profile from "../../assets/image-avatar 1.png";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 function Nav() {
   return (
-  <NavWrapper>
-    <Logo href="">sneakers</Logo>
-    <NavList>
-      <NavItem href=""><li>Collections</li></NavItem>
-      <NavItem href=""><li>Men</li></NavItem>
-      <NavItem href=""><li>Woman</li></NavItem>
-      <NavItem href=""><li>About</li></NavItem>
-      <NavItem href=""><li>Contact</li></NavItem>
-    </NavList>
-    <CartWrapper>
-     <ShoppingCartOutlinedIcon />
-      <img src={Profile} alt="" />
-    </CartWrapper>
-  </NavWrapper>
+    <NavWrapper>
+      <Logo href="">sneakers</Logo>
+      <NavList className="nav-border">
+        <li>
+          <NavItem href="">Collections</NavItem>
+        </li>
+        <li>
+          <NavItem href="">Men</NavItem>
+        </li>
+        <li>
+          <NavItem href="">Woman</NavItem>
+        </li>
+        <li>
+          <NavItem href="">About</NavItem>
+        </li>
+        <li>
+          <NavItem href="">Contact</NavItem>
+        </li>
+      </NavList>
+      <CartWrapper>
+        <ShoppingCartOutlinedIcon />
+        <img src={Profile} alt="" />
+      </CartWrapper>
+    </NavWrapper>
   );
 }
 
