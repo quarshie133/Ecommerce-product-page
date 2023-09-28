@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-  
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Raleway:wght@300;400;500&display=swap');
@@ -8,9 +7,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: "Outfit", sans-serif;
     padding: 0px;
     margin: 0px;
+   
   
 }
 `;
