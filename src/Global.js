@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Outfit", sans-serif;
     padding: 0px;
     margin: 0px;
+    
    
-  
 }
 `;
 

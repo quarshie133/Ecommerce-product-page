@@ -1,13 +1,18 @@
 import { styled } from "styled-components";
 
 export const NavWrapper = styled.nav`
+  /* width: 100%; */
   background-color: var(--white_background);
   padding: 20px;
   display: flex;
-
   align-items: center;
   gap: 2rem;
   border-bottom: 1px solid #ccc;
+
+  @media screen and (max-width: 768px) {
+    width: 380px;
+    height: 70px;
+  }
 `;
 
 export const Logo = styled.a`
@@ -18,6 +23,10 @@ export const Logo = styled.a`
   text-decoration: none;
   color: var(--black-color);
   margin-left: 10.31rem;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 2.85rem;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -57,6 +66,10 @@ export const NavItem = styled.a`
   &:hover:before {
     transform: scaleX(1); /* Expand the underline on hover */
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const CartWrapper = styled.div`
@@ -66,4 +79,8 @@ export const CartWrapper = styled.div`
   margin-left: auto;
   margin-right: 7rem;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    margin-left: -6.68rem;
+  }
 `;

@@ -5,14 +5,15 @@ import {
   NavList,
   NavItem,
   CartWrapper,
-  NavLink,
 } from "./Nav.styled";
 import Profile from "../../assets/image-avatar 1.png";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import Burger from "../Burger/Burger";
 
 function Nav() {
   return (
     <NavWrapper>
+      <Burger />
       <Logo href="">sneakers</Logo>
       <NavList className="nav-border">
         <li>
