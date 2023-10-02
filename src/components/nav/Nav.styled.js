@@ -16,7 +16,6 @@ export const NavWrapper = styled.nav`
     width: 100%;
     /* margin: 0 10% 0 10%; */
     /* padding: 0 20px; */
-    
   }
 `;
 
@@ -29,10 +28,9 @@ export const Logo = styled.a`
   color: var(--black-color);
   margin-left: 10.31rem;
 
-
   @media screen and (max-width: 768px) {
-    margin-left: 2.85rem;
-    
+    letter-spacing: 1;
+    margin-left: 2.35rem;
   }
 `;
 
@@ -82,12 +80,12 @@ export const NavItem = styled.a`
 export const CartWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   margin-left: auto;
   margin-right: 7rem;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    margin-left: -6.68rem;
+    margin-left: -7.68rem;
   }
 `;
