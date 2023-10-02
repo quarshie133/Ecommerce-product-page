@@ -10,8 +10,13 @@ export const NavWrapper = styled.nav`
   border-bottom: 1px solid #ccc;
 
   @media screen and (max-width: 768px) {
-    width: 380px;
+    /* width: 380px; */
     height: 70px;
+    /* display: inline-block; */
+    width: 100%;
+    /* margin: 0 10% 0 10%; */
+    /* padding: 0 20px; */
+    
   }
 `;
 
@@ -24,8 +29,10 @@ export const Logo = styled.a`
   color: var(--black-color);
   margin-left: 10.31rem;
 
+
   @media screen and (max-width: 768px) {
     margin-left: 2.85rem;
+    
   }
 `;
 
