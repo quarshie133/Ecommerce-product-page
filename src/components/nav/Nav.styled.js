@@ -29,7 +29,8 @@ export const Logo = styled.a`
   margin-left: 10.31rem;
 
   @media screen and (max-width: 768px) {
-    letter-spacing: 1;
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
     margin-left: 2.35rem;
   }
 `;
