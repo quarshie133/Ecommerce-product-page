@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledBurger } from "./Burger.styled";
+import RightNav from "../Sidebar/Sidebar";
 
-function Burger() {
+const Burger = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <StyledBurger>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
+    <>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+      <RightNav open={open} />
+    </>
   );
-}
+};
 
 export default Burger;
