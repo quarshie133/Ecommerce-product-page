@@ -33,3 +33,12 @@ export const Logo = styled.a`
     margin-left: 4.35rem;
   }
 `;
+
+export const CartWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: 3rem;
+  cursor: pointer;
+`;
