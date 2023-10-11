@@ -89,5 +89,8 @@ export const useGlobalContext = () => {
 };
 
 export { AppContext, AppProvider };
-import { useGlobalContext } from './context'
+
+
+
+// import { useGlobalContext } from './context.js'
 // const { openSidebar, openModal } = useGlobalContext();

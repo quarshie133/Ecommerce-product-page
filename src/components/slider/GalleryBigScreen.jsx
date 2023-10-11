@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import "../slider/ImageSlider.css";
 import { productImages } from "../slider/SliderData";
-// import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context";
 
 function GalleryBigScreen() {
-  //   const { openLightboxGallery } = useGlobalContext();
+  const { openLightboxGallery } = useGlobalContext();
   const [mainImg, setMainImg] = useState(productImages[0]);
 
   return (
-    <section className="gallery-big-screen-images-conatiner">
-      <img src={mainImg} alt="product" className="big-screen-main-img" />
+    <section className="gallery-big-screen-images-container">
+      <img
+        src={mainImg}
+        alt="product"
+        className="big-screen-main-img"
+        onClick={openLightboxGallery}
+      />
       <div className="gallery-small-images">
         {productImages.map((image, index) => {
           return (
             <div
               className={
                 image === mainImg
-                  ? "active-small-img-container"
+                  ? "active-small-img-container small-img-container"
                   : "small-img-container"
               }
               key={index}

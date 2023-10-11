@@ -1,8 +1,25 @@
-import React from "react";
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import React, { useState } from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import "../slider/ImageSlider.css";
+import { useGlobalContext } from "../../context"
 
 function ProductInfo() {
+  const { handleAddToCart } = useGlobalContext();
+
+  const [amount, setAmount] = useState(0);
+
+  const increaseAmont = (amount) => {
+    setAmount(amount + 1);
+    if (amount >= 10) {
+      setAmount(10);
+    }
+  };
+  const decreaseAmount = (amount) => {
+    setAmount(amount - 1);
+    if (amount <= 0) {
+      setAmount(0);
+    }
+  };
   return (
     <section className="product-info-container">
       <h3>SNEAKER COMPANY</h3>
@@ -23,13 +40,20 @@ function ProductInfo() {
       </div>
       <div className="add-to-cart-container">
         <button className="quantity-btn">
-          <span className="quantity-icon">-</span>
-          <span className="quantity-number"></span>
-          <span className="quantity-icon">+</span>
+          <span
+            className="quantity-icon"
+            onClick={() => decreaseAmount(amount)}
+          >
+            -
+          </span>
+          <span className="quantity-number">{amount}</span>
+          <span className="quantity-icon" onClick={() => increaseAmont(amount)}>
+            +
+          </span>
         </button>
         <button className="add-to-cart-btn">
           <AiOutlineShoppingCart />
-          <span>Add to cart</span>
+          <span onClick={() => handleAddToCart(amount)}>Add to cart</span>
         </button>
       </div>
     </section>

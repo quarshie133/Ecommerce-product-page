@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../slider/ImageSlider.css";
 import { SliderData } from "./SliderData";
-// import Next from "../../assets/icon-next.svg";
-// import Previous from "../../assets/icon-previous.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import GalleryBigScreen from "./GalleryBigScreen";
 
