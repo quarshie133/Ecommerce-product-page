@@ -10,6 +10,7 @@
   --clr-primary-pale-orange: hsl(25, 100%, 94%);
   --clr-dark-grayish-blue: hsl(219, 9%, 45%);
   --orange-shadow: 0 15px 15px rgba(255, 125, 26, 0.3);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
   --transition: all 0.3s linear;
 }
